@@ -4,7 +4,6 @@ import { getTasks } from '@core/configs';
 import { random } from 'lodash';
 import { logger } from '@core/logger';
 import { sendMessage as sendDiscordMessage } from '@core/notifications/discord';
-import { sendMessage as sendTelegramMessage } from '@core/notifications/telegram';
 import { existsSync, writeFileSync } from 'fs';
 import pm2 from 'pm2';
 
@@ -44,7 +43,6 @@ const main = async () => {
   
     await Promise.all([
       await sendDiscordMessage({ message: 'Shutting down in 1 minute' }),
-      await sendTelegramMessage({ message: 'Shutting down in 1 minute' })
     ]);
   
     await wait(60000);
