@@ -1,0 +1,31 @@
+[
+  {
+    "stores": {
+      "bestbuy": {
+        "products": [
+          {
+            "searchText": "nvidia 3080 Titanium and Black",
+            "sku": "6429440",
+            "model": "9001G1332530000",
+            "productName": "NVIDIA GeForce RTX 3080 10GB GDDR6X PCI Express 4.0  Graphics Card - Titanium and Black",
+            "productPage": "/site/nvidia-geforce-rtx-3080-10gb-gddr6x-pci-express-4-0-graphics-card-titanium-and-black/6429440.p?skuId=6429440"
+          },
+          {
+            "searchText": "",
+            "sku": "6436194",
+            "model": "10G-P5-3883-KR",
+            "productName": "EVGA - GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Graphics Card",
+            "productPage": "/site/evga-geforce-rtx-3080-10gb-gddr6x-pci-express-4-0-graphics-card/6436194.p?skuId=6436194"
+          },
+          {
+            "searchText": "",
+            "sku": "6432399",
+            "model": "10G-P5-3881-KR",
+            "productName": "EVGA - GeForce RTX 3080 10GB GDDR6X PCI Express 4.0 Graphics Card",
+            "productPage": "/site/evga-geforce-rtx-3080-10gb-gddr6x-pci-express-4-0-graphics-card/6432399.p?skuId=6432399"
+          }
+        ]
+      }
+    }
+  }
+]
