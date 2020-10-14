@@ -1,9 +1,5 @@
 {
   "discord": {
     "url": ""
-  },
-  "telegram": {
-    "token": "",
-    "chatId": ""
   }
 }
