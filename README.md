@@ -1,7 +1,7 @@
 # best-buy-sniper
 
 # Installation:
-- Windows
+* Windows
 1. FIll in all the data in `config/prod/`
 2. Open terminal and run `npm install`
 3. Once it has done installing, run `npm run start`
