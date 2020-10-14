@@ -7,10 +7,6 @@
 
 > 🎯 Autonomously buy NVIDIA RTX 30 Series GPUs from Best Buy
 
-## Prerequisites
-
-- npm >=5.5.0
-
 ## Install
 ### Windows
 `npm install`
