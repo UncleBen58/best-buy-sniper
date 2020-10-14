@@ -23,7 +23,7 @@
   
 Add or remove the desired cards you want to purchase in `config/prod/tasks.json`
 
-You must have both telegram and discord notifcation set in order for the bot to work. If you are not using one or both, you must comment out any line of code that has `sendDiscordMessage` and/or `sendTelegramMessage` in `main.ts and bestbuy.ts`. Will add a way to disable them that is more user friendly sorry about that.
+You must have discord notifcation set in order for the bot to work. If you do not want to use it, you must comment out any line of code that has `sendDiscordMessage` in `main.ts` and `bestbuy.ts`.
 
 2. Use `npm run start` to run the bot
 
