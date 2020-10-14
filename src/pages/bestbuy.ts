@@ -5,7 +5,6 @@ import { CustomerInformation, getCustomerInformation, getPaymentInformation, Pay
 import { logger } from '@core/logger';
 import { resolve } from 'path';
 import { sendMessage as sendDiscordMessage } from '@core/notifications/discord';
-import { sendMessage as sendTelegramMessage } from '@core/notifications/telegram';
 import { existsSync, writeFileSync } from 'fs';
 
 interface ProductInformation {
@@ -118,7 +117,6 @@ export class BestBuy {
     if (sensorCookie && !sensorValidationRegex.test(sensorCookie)) {
       await Promise.all([
         sendDiscordMessage({ message: `Browser is considered a bot, aborting attempt` }),
-        sendTelegramMessage({ message: `Browser is considered a bot, aborting attempt` })
       ]);
 
       throw new Error('Browser is considered a bot, aborting attempt');
@@ -139,7 +137,6 @@ export class BestBuy {
 
     await Promise.all([
       sendDiscordMessage({ message: `Product "${productName}" in stock!`, image: productInStockScreenshotPath }),
-      sendTelegramMessage({ message: `Product "${productName}" in stock!` })
     ]);
 
     logger.info(`"${productName}" in stock, adding to cart...`);
@@ -161,7 +158,6 @@ export class BestBuy {
 
     await Promise.all([
       sendDiscordMessage({ message: `Product "${productName}" added to cart!`, image: productAddedImagePath }),
-      sendTelegramMessage({ message: `Product "${productName}" added to cart!` })
     ]);
   }
 
@@ -223,7 +219,6 @@ export class BestBuy {
 
     await Promise.all([
       sendDiscordMessage({ message: `Attempting checkout`, image: startingCheckoutScreenshotPath }),
-      sendTelegramMessage({ message: `Attempting checkout` })
     ]);
 
     await this.clickCheckoutButton();
@@ -238,7 +233,6 @@ export class BestBuy {
 
       await Promise.all([
         sendDiscordMessage({ message: `Checkout did not went through, trying again`, image: startingCheckoutScreenshotPath }),
-        sendTelegramMessage({ message: `Checkout did not went through, trying again` })
       ]);
 
       await this.checkout(true);
@@ -354,7 +348,6 @@ export class BestBuy {
 
     await Promise.all([
       sendDiscordMessage({ message: `Placing order...`, image: placingOrderScreenshotPath }),
-      sendTelegramMessage({ message: `Placing order...` })
     ]);
 
     if (existsSync('purchase.json')) {
@@ -385,7 +378,6 @@ export class BestBuy {
 
     await Promise.all([
       sendDiscordMessage({ message: `Order placed!`, image: orderPlacedScreenshotPath }),
-      sendTelegramMessage({ message: `Order placed!` })
     ]);
 
     await wait(3000);
