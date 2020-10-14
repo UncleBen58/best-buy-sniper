@@ -17,7 +17,7 @@
 
 ## Usage
 ### Windows
-<b>NOTE: By default the auto-checkout is disabled so their is no accidental purchasing. To enable auto-checkout uncomment the code found on `line: 368-370` in the `bestbuy.ts` file located in `src/pages`.</b>
+<b>NOTE: By default the auto-checkout is disabled so there is no accidental purchasing. To enable auto-checkout uncomment the code found on `line: 368-370` in the `bestbuy.ts` file located in `src/pages`.</b>
 
 1. FIll in all the data in `config/prod/`
   
