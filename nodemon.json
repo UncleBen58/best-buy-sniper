@@ -1,0 +1,5 @@
+{
+  "ignore": [".git", "node_modules"],
+  "watch": ["dist"],
+  "exec": "node -r ./tsconfig-paths-bootstrap.js dist/src/main.js"
+}

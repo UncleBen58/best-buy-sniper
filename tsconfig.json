@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@config/*": ["config/*"],
+      "@core/*": ["src/core/*"],
+      "@driver/*": ["src/driver/*"],
+      "@pages/*": ["src/pages/*"]
+    }
+  }
+}
